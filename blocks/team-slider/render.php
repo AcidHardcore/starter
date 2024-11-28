@@ -56,7 +56,7 @@ ob_start(); ?>
               </div>
               <div class="team-slider__member__name">
                 <?php get_template_part( 'template-parts/block/title', null, [
-                  'title'  => $member['name'],
+                  'title'  => $member['title'],
                   'tag'    => 'h2',
                   'as_tag' => 'h5',
                   'is_wow' => false,

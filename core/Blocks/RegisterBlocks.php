@@ -34,4 +34,6 @@ class RegisterBlocks extends BaseController
             register_block_type($block);
         }
     }
+
+
 }
