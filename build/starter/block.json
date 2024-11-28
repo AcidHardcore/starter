@@ -1,0 +1,24 @@
+{
+  "name": "acf/starter",
+  "title": "Block Starter",
+  "description": "Simple ACF block registered through the multiblock setup.",
+  "category": "text",
+  "icon": "align-left",
+  "acf": {
+    "renderTemplate": "template.php"
+  },
+  "supports": {
+    "align": false,
+    "anchor": false,
+    "color": {
+      "text": true,
+      "background": true
+    }
+  },
+  "style": [
+    "file:./style-index.css"
+  ],
+  "script": [
+    "file:./index.js"
+  ]
+}

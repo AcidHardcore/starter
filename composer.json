@@ -1,0 +1,30 @@
+{
+    "name": "skeleton-wp/starter",
+    "description": "Gutenberg start block plugin",
+    "type": "project",
+    "license": "GPLv2",
+    "authors": [
+        {
+            "name": "Block starter",
+            "email": "test@test.com"
+        }
+    ],
+    "config": {
+        "vendor-dir": "lib",
+        "allow-plugins": {
+            "composer/installers": true
+        }
+    },
+    "repositories":[
+        {
+          "type": "composer",
+          "url": "https://wpackagist.org"
+        }
+      ],
+    "require": {
+        "composer/installers": "^1"
+      },
+    "autoload": {
+        "psr-4": {"Starter\\": "./core"}
+    }
+}

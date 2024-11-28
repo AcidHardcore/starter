@@ -1,0 +1,29 @@
+{
+  "name": "acf/team-slider",
+  "title": "Team Slider",
+  "description": "A custom block.",
+  "style": ["file:./style-index.css"],
+  "script": ["file:./index.js"],
+  "category": "skeleton-wp",
+  "icon": "carrot",
+  "keywords": [],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "render.php"
+  },
+  "styles": [],
+  "supports": {
+    "align": false,
+    "anchor": true,
+    "alignContent": false,
+    "color": {
+      "text": false,
+      "background": false,
+      "link": false
+    },
+    "alignText": false,
+    "fullHeight": false
+  },
+  "attributes": {
+  }
+}

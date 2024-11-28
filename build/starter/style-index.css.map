@@ -1,0 +1,1 @@
+{"version":3,"file":"starter/style-index.css","mappings":";;;AAEA;EACE;EACA;EACA;AADF,C","sources":["webpack://block-starter/./blocks/starter/style.scss"],"sourcesContent":["$black: #000;\n\n.wp-block-acf-starter {\n  border: 2px solid $black;\n  border-radius: 16px;\n  padding: 2rem;\n}\n"],"names":[],"sourceRoot":""}
