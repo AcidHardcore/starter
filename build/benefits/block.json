@@ -1,0 +1,40 @@
+{
+  "name": "vit/benefits",
+  "title": "Benefits",
+  "description": "Benefits block",
+  "category": "devphase",
+  "icon": "smiley",
+  "supports": {
+    "align": false,
+    "anchor": false,
+    "color": {
+      "text": false,
+      "background": false
+    },
+    "spacing": {
+      "margin": true,
+      "padding": true,
+      "blockGap": null,
+      "units": [
+        "px",
+        "em",
+        "rem",
+        "vh",
+        "vw"
+      ]
+    }
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "attributes": {
+    "benefits": {
+      "type": "array",
+      "default": []
+    },
+    "type": {
+      "type": "string",
+      "default": "default"
+    }
+  }
+}

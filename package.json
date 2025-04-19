@@ -7,13 +7,22 @@
 	"main": "build/index.js",
 	"scripts": {
 		"start": "wp-scripts start --webpack-src-dir=blocks --webpack-copy-php",
-		"build": "wp-scripts build --webpack-src-dir=blocks --webpack-copy-php"
+		"build": "wp-scripts build --webpack-src-dir=blocks --webpack-copy-php",
+		"build:utils": "wp-scripts build utils/main.js --output-path=./build/utils"
 	},
 	"devDependencies": {
 		"@wordpress/scripts": "^30.15.0"
 	},
 	"dependencies": {
 		"@wordpress/icons": "^10.22.0",
-		"clsx": "^2.1.1"
+		"clsx": "^2.1.1",
+		"@wordpress/block-editor": "^14.17.0",
+		"@wordpress/components": "^29.8.0",
+		"@wordpress/compose": "^7.22.0",
+		"@wordpress/data": "^10.22.0",
+		"@wordpress/element": "^6.22.0",
+		"@wordpress/i18n": "^5.22.0",
+		"@wordpress/keycodes": "^4.22.0",
+		"@wordpress/url": "^4.22.0"
 	}
 }

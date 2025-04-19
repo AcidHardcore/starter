@@ -1,0 +1,27 @@
+{
+  "name": "vit/text-image",
+  "title": "Text Image",
+  "description": "Simple block",
+  "category": "text",
+  "icon": "align-left",
+  "supports": {
+    "align": false,
+    "anchor": false,
+    "color": {
+      "text": true,
+      "background": true
+    }
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php",
+  "attributes": {
+    "image_id": {
+      "type": "number"
+    },
+    "image_url": {
+      "type": "string"
+    }
+  }
+}
