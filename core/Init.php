@@ -21,6 +21,7 @@ final class Init {
 	public static function get_services() {
 		return array(
 			Blocks\RegisterBlocks::class,
+			Blocks\BlockBindings::class,
 			Blocks\ACF::class,
 			Misc\Helpers::class,
 			Misc\Enqueue::class,

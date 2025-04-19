@@ -47,7 +47,6 @@ class ACF extends BaseController {
 		$paths[] = $this->plugin_path . '/acf-json/options-pages';
 		$paths[] = $this->plugin_path . '/acf-json/post-types';
 		$paths[] = $this->plugin_path . '/acf-json/taxonomies';
-error_log(print_r($paths, true));
 		return $paths;
 	}
 
