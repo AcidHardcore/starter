@@ -14,7 +14,7 @@ use function get_theme_file_path;
 class Enqueue extends BaseController {
 
 
-	public function initialize() {
+	public function register() {
 		add_action( 'wp_enqueue_scripts', array( $this, 'action_enqueue' ) );
 		add_action( 'enqueue_block_editor_assets', array( $this, 'action_enqueue' ) );
 	}
