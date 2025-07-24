@@ -3,25 +3,18 @@
   "title": "Editor",
   "description": "Editor block",
   "category": "text",
-  "icon": "cog",
+  "icon": "edit",
   "supports": {
     "align": false,
     "anchor": false,
     "color": {
       "text": true,
-      "background": true
+      "background": false,
+      "link": true
     }
   },
   "editorScript": "file:./index.js",
   "editorStyle": "file:./index.css",
   "style": "file:./style-index.css",
-  "render": "file:./render.php",
-  "attributes": {
-    "image_id": {
-      "type": "number"
-    },
-    "image_url": {
-      "type": "string"
-    }
-  }
+  "attributes": {}
 }

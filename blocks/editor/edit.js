@@ -8,8 +8,7 @@ import './editor.scss'
 
 import {
   useBlockProps,
-  InnerBlocks,
-  MediaPlaceholder
+  InnerBlocks
 } from '@wordpress/block-editor'
 
 import {
@@ -27,9 +26,7 @@ import clsx from 'clsx'
  * @return {WPElement} Element to render.
  */
 
-export default function ({ attributes,
-    setAttributes, style
-  }) {
+export default function ({ attributes, setAttributes, style }) {
 
   const TEMPLATE = [
     ['core/paragraph', {
@@ -37,18 +34,17 @@ export default function ({ attributes,
     }],
   ]
 
-  const blockProps = useBlockProps( {
+  const blockProps = useBlockProps({
     className: 'editor',
-
-  } );
+  })
 
   return (
     <>
-      <div { ...blockProps } >
+      <div {...blockProps} >
 
-          <InnerBlocks
-            template={TEMPLATE}
-          />
+        <InnerBlocks
+          template={TEMPLATE}
+        />
 
       </div>
     </>
