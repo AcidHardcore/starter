@@ -1,10 +1,3 @@
-/**
- * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
- * Those files can contain any CSS code that gets applied to the editor.
- *
- * @see https://www.npmjs.com/package/@wordpress/scripts#using-css
- */
-import './style.scss'
 
 import {
   useBlockProps,
@@ -12,7 +5,6 @@ import {
   RichText,
 } from '@wordpress/block-editor'
 
-import { Fragment } from '@wordpress/element'
 
 /**
  * The save function defines the way in which the different attributes should
@@ -38,11 +30,11 @@ export default function save({ attributes }) {
     <section {...blockProps}>
       <div className="container">
         <div {...innerBlockProps} />
-        
+
         {benefits.length > 0 && (
           <div className="benefits__cont">
             {benefits.map((benefit, index) => (
-              <div 
+              <div
                 key={index}
                 className="benefits__item"
                 data-aos="fade-up"
@@ -71,4 +63,4 @@ export default function save({ attributes }) {
       </div>
     </section>
   )
-} 
+}
