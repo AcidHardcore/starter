@@ -2,7 +2,7 @@
     "name": "vit/text-image",
     "title": "Text Image",
     "description": "Simple block",
-    "category": "text",
+    "category": "devphase",
     "icon": "align-left",
     "supports": {
         "align": false,
@@ -15,13 +15,36 @@
     "editorScript": "file:./index.js",
     "editorStyle": "file:./index.css",
     "style": "file:./style-index.css",
-    "render": "file:./render.php",
     "attributes": {
-        "image_id": {
-            "type" : "number"
+        "align": {
+            "type": "string",
+            "default": "left"
         },
-        "image_url" : {
-            "type" : "string"
+        "image_id": {
+            "type": "number"
+        },
+        "image_url": {
+            "type": "string"
+        },
+        "image_alt": {
+            "type": "string",
+            "default": "image"
+        },
+        "image_srcset": {
+            "type": "string"
+        },
+        "image_sizes": {
+            "type": "string"
+        },
+        "image_width": {
+            "type": "number"
+        },
+        "image_height": {
+            "type": "number"
+        },
+        "image_loading": {
+            "type": "string",
+            "default": "lazy"
         }
     }
 }

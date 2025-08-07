@@ -1,11 +1,11 @@
-.grid {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-  column-gap: 2rem;
-}
+
 
 .image-container {
   position: relative;
+
+  svg {
+    pointer-events: auto !important;
+  }
 }
 
 .trash-icon {

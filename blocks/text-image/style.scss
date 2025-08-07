@@ -1,0 +1,20 @@
+.text-image {
+
+  &--left {
+      .text-image__content {
+        order: 0;
+      }
+  }
+
+  &--right {
+    .text-image__content {
+      order: 1;
+    }
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    column-gap: 2rem;
+  }
+}
