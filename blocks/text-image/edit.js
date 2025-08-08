@@ -99,7 +99,7 @@ export default function ({ attributes, setAttributes }) {
                 size={32}
                 icon={trash}
                 onClick={() => setAttributes({
-                  image_url: null,
+                  image_url: '',
                   image_id: null,
                   image_alt: '',
                   image_srcset: '',
