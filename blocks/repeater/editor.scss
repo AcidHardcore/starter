@@ -1,0 +1,111 @@
+/* Clean CSS without drag and drop conflicts */
+
+.repeater-item-wrapper {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  padding: 16px;
+  background: #fff;
+  transition: border-color 0.2s ease;
+}
+
+.repeater-item-wrapper:hover {
+  border-color: #007cba;
+}
+
+.repeater-item-header {
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.repeater-item-number {
+  font-weight: 600;
+  color: #666;
+  font-size: 14px;
+}
+
+.repeater-item-content {
+  /* Content specific styles */
+}
+
+/* Image container */
+.image-container {
+  position: relative;
+  display: inline-block;
+  max-width: 150px;
+  margin-bottom: 12px;
+  width: 100%;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.remove-image-button {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: var(--wp-components-color-accent, #cc1818);
+  fill: #fff;
+  color: #fff !important;
+  border-radius: 50%;
+  padding: 0 !important;
+  border: 2px solid #000;
+  transition: transform .3s ease;
+  cursor: pointer;
+  height: auto;
+  min-width: auto !important;
+}
+
+.remove-image-button:hover {
+  transform: translateY(-.25rem);
+}
+
+.remove-image-button .components-button__icon {
+  margin: 0;
+}
+
+/* Control buttons */
+.repeater-item-header .components-flex {
+  align-items: center;
+}
+
+.repeater-item-header .components-button {
+  min-width: auto;
+}
+
+.repeater-item-header .components-button[disabled] {
+  opacity: 0.5;
+}
+
+/* Form controls */
+.repeater-item-wrapper .components-base-control {
+  margin-bottom: 16px;
+}
+
+.repeater-item-wrapper .components-base-control:last-child {
+  margin-bottom: 0;
+}
+
+/* Panel rows */
+.repeater-item-wrapper .components-panel__row {
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 13px;
+  color: #1e1e1e;
+}
+
+/* Divider */
+.repeater-item-wrapper .components-divider {
+  margin: 16px 0 0 0;
+}
+
+/* Media placeholder */
+.repeater-item-wrapper .components-placeholder {
+  min-height: 100px;
+  margin-bottom: 12px;
+}
