@@ -21,11 +21,9 @@ import {
 
 import clsx from 'clsx'
 
-export default function ({ attributes, setAttributes }) {
+export default function ({ attributes, setAttributes, className, style }) {
   const {
     align,
-    className,
-    style,
     image_url,
     image_id,
     image_alt,
@@ -82,7 +80,7 @@ export default function ({ attributes, setAttributes }) {
         <div className="text-image__grid">
           <div {...innerBlockProps} />
 
-          {attributes.image_url && attributes.image_id ? (
+          {image_url && image_id ? (
             <div className="image-container">
               <img
                 src={image_url}
