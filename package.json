@@ -8,7 +8,8 @@
 	"scripts": {
 		"start": "wp-scripts start --webpack-src-dir=blocks --webpack-copy-php",
 		"build": "wp-scripts build --webpack-src-dir=blocks --webpack-copy-php",
-		"build:custom": "wp-scripts build --source-path=src/editor --output-path=js/"
+		"build:custom-js": "wp-scripts build --source-path=src/editor --output-path=js/",
+		"build:editor-css": "sass src/editor/editor.scss css/editor.css"
 	},
 	"devDependencies": {
 		"@wordpress/scripts": "^30.20.0"
