@@ -78,7 +78,7 @@ export default function ({ attributes, setAttributes }) {
         </PanelBody>
       </InspectorControls>
 
-      <div {...blockProps} >
+      <section {...blockProps} >
         <div className="text-image__grid">
           <div {...innerBlockProps} />
 
@@ -156,7 +156,7 @@ export default function ({ attributes, setAttributes }) {
             </MediaPlaceholder>
           )}
         </div>
-      </div>
+      </section>
     </>
   )
 }

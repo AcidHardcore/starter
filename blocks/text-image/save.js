@@ -1,8 +1,7 @@
 import {
   useBlockProps,
   useInnerBlocksProps,
-}
-  from '@wordpress/block-editor'
+} from '@wordpress/block-editor'
 
 export default function save ({attributes}) {
   const {
@@ -28,7 +27,7 @@ export default function save ({attributes}) {
   const animationType = align === 'left' ? 'fadeRight' : 'fadeLeft'
 
   return (
-    <div {...blockProps} data-scroll-section={true}>
+    <section {...blockProps} data-scroll-section={true}>
       <div className="text-image__grid">
       <div {...innerBlockProps} />
 
@@ -53,6 +52,6 @@ export default function save ({attributes}) {
         )}
 
       </div>
-    </div>
+    </section>
   )
 }
