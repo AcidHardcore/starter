@@ -91,10 +91,11 @@ export const Item = ({
             <Button
               className="remove-image-button"
               icon={trash}
-              size="32"
+              size="small"
               onClick={() => onRemoveImage(index)}
               label="Remove image"
               isDestructive
+              showTooltip
             />
           </div>
         ) : (
