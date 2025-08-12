@@ -1,0 +1,24 @@
+{
+	"name": "vit/slideshow",
+	"title": "Slideshow",
+	"category": "devphase",
+	"icon": "smiley",
+	"supports": {
+		"align": false,
+		"anchor": false,
+		"color": {
+			"text": true,
+			"background": true
+		}
+	},
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": ["file:./style-index.css"],
+	"viewScript": "file:view.js",
+	"attributes": {
+		"interval": {
+			"type": "number",
+			"default": 3
+		}
+	}
+}
