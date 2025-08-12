@@ -1,1 +1,11 @@
-@use 'swiper.scss';
+//@use 'swiper.scss';
+
+.swiper {
+  overflow: auto;
+
+  &-wrapper {
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+}

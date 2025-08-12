@@ -1,40 +1,46 @@
 .image-container {
   position: relative;
   display: inline-block;
-  max-width: 150px;
-  margin-bottom: 12px;
+  margin-bottom: 0.75rem;
   width: 100%;
-}
 
-.image-container img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 4px;
-  border: 1px solid #ddd;
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+  }
+
+  svg {
+    pointer-events: auto !important;
+  }
 }
 
 .remove-image-button {
   position: absolute;
   top: -8px;
   right: -8px;
-  background: var(--wp-components-color-accent, #cc1818);
+  background: var(--wp-components-color-accent, #cc1818) !important;
   fill: #fff;
   color: #fff !important;
   border-radius: 50%;
   padding: 0 !important;
   border: 2px solid #000;
-  transition: transform 0.3s ease;
+  transition: transform .3s ease;
   cursor: pointer;
-  height: auto;
+  height: auto !important;
+  width: auto !important;
   min-width: auto !important;
+
+  &:hover {
+    box-shadow:  none !important;
+  }
 }
 
 .remove-image-button:hover {
-  transform: translateY(-0.25rem);
+  transform: translateY(-.25rem);
 }
 
 .remove-image-button .components-button__icon {
   margin: 0;
 }
-
-/*# sourceMappingURL=editor.css.map */
