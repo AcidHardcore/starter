@@ -4,7 +4,11 @@ import {
 } from '@wordpress/block-editor'
 
 import {
-  Icon, trash
+  Button
+} from '@wordpress/components';
+
+import {
+  trash
 } from '@wordpress/icons'
 
 export const Display = ({
@@ -32,12 +36,15 @@ export const Display = ({
                 loading={item.image_loading}
                 decoding="async"
               />
-              <Icon
+              <Button
                 className="remove-image-button"
-                size={24}
+                isDestructive
+                size="small"
                 icon={trash}
                 draggable="false"
                 onClick={() => onRemoveImage(index)}
+                showTooltip
+                label={'Remove image'}
               />
             </div>
           ) : (
