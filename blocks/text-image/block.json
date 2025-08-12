@@ -1,7 +1,6 @@
 {
     "name": "vit/text-image",
     "title": "Text Image",
-    "description": "Simple block",
     "category": "devphase",
     "icon": "align-left",
     "supports": {

@@ -1,28 +1,2 @@
 
 
-.image-container {
-  position: relative;
-
-  svg {
-    pointer-events: auto !important;
-  }
-}
-
-.trash-icon {
-  box-sizing: border-box;
-  background: white;
-  padding: 4px;
-  cursor: pointer;
-  position: absolute;
-  top: 4px;
-  left: 4px;
-  z-index: 2;
-  border: 2px solid var(--wp-components-color-accent,#b93535);
-  fill: var(--wp-components-color-accent,#b93535);
-  border-radius: 100px;
-  transition: transform 0.3s ease-in-out;
-
-  &:hover {
-    transform: scale(1.1);
-  }
-}

@@ -93,7 +93,7 @@ export default function ({ attributes, setAttributes, className, style }) {
                 loading={image_loading}
               />
               <Icon
-                className="trash-icon"
+                className="remove-image-button"
                 size={32}
                 icon={trash}
                 onClick={() => setAttributes({
