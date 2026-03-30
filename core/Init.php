@@ -22,7 +22,6 @@ final class Init {
 		return array(
 			Blocks\RegisterBlocks::class,
 			Blocks\BlockBindings::class,
-			Blocks\ACF::class,
 			Misc\Helpers::class,
 			Misc\Enqueue::class,
 		);
