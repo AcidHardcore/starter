@@ -1,0 +1,11 @@
+@use "sass:math";
+
+@import '../../../../themes/skeleton-wp/assets/css/functions';
+@import '../../../../themes/skeleton-wp/assets/css/settings';
+
+.image {
+  border-radius: em(25);
+  overflow: hidden;
+}
+
+

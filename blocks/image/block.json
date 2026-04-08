@@ -1,0 +1,40 @@
+{
+  "apiVersion": 3,
+  "name": "vit/image",
+  "title": "Image",
+  "description": "Image block",
+  "category": "devphase",
+  "icon": "smiley",
+  "supports": {
+    "align": false,
+    "anchor": false,
+    "color": {
+      "text": false,
+      "background": false
+    }
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": [
+    "file:./style-index.css"
+  ],
+  "attributes": {
+    "image": {
+      "type": "object",
+      "default": {
+        "id": null,
+        "url": "",
+        "alt": "image",
+        "srcset": "",
+        "sizes": "",
+        "width": null,
+        "height": null,
+        "loading": "lazy"
+      }
+    },
+    "isWow": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

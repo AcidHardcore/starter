@@ -1,0 +1,43 @@
+{
+  "apiVersion": 3,
+  "name": "vit/list-icons",
+  "title": "List Icons",
+  "description": "List Icons block",
+  "category": "devphase",
+  "icon": "smiley",
+  "supports": {
+    "align": false,
+    "anchor": true,
+    "color": {
+      "text": false,
+      "background": false
+    },
+    "spacing": {
+      "margin": false,
+      "padding": false,
+      "blockGap": null,
+      "units": [
+        "px",
+        "em",
+        "rem",
+        "vh",
+        "vw"
+      ]
+    }
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": [
+    "skeleton-wp-list-icons"
+  ],
+  "attributes": {
+    "isWow": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "parent": [
+    "vit/general",
+    "core/column"
+  ]
+}

@@ -1,0 +1,33 @@
+@use "sass:math";
+
+@import '../../../../themes/skeleton-wp/assets/css/functions';
+@import '../../../../themes/skeleton-wp/assets/css/settings';
+
+.blog-body {
+
+}
+.blog-body__wrap {
+  display: flex;
+  gap: em(80);
+  @media #{$w1024} {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+.blog-body__content {
+  flex: 1;
+}
+.blog-body__sidebar {
+  width: em(460);
+  @media #{$w1024} {
+    width: auto;
+  }
+}
+
+.blog-body__disclaimer {
+  margin-top: 2em;
+}
+
+//.blog-body .gform_wrapper {
+//  margin-bottom: 0;
+//}

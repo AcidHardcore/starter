@@ -1,0 +1,45 @@
+@use "sass:math";
+
+@import '../../../../themes/skeleton-wp/assets/css/functions';
+@import '../../../../themes/skeleton-wp/assets/css/settings';
+
+.reviews {
+  margin: em(80) 0 em(80) 0;
+  overflow: visible;
+  @media #{$w1024} {
+    margin: em(48) 0 em(48) 0;
+  }
+  &:first-child {
+    margin-top: 0 !important;
+  }
+  &:last-child {
+    margin-bottom: 0 !important;
+  }
+
+  .review {
+    margin-left: em(32);
+  }
+}
+.reviews__slider {
+  display: flex;
+  align-items: stretch;
+  margin-left: em(-32);
+}
+
+.review {
+  background: var(--color-yellow20);
+  border-radius: em(25);
+  padding: em(32);
+  width: em(600);
+  flex-shrink: 0;
+  box-sizing: border-box;
+  @media #{$w1024} {
+    width: em(300);
+  }
+}
+.review__stars {
+  margin-bottom: em(24);
+}
+.review__author {
+  margin-top: em(24);
+}

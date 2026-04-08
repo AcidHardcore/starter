@@ -1,0 +1,75 @@
+@use "sass:math";
+
+@import '../../../../themes/skeleton-wp/assets/css/functions';
+@import '../../../../themes/skeleton-wp/assets/css/settings';
+
+.block:has(.people__slider) {
+  overflow: hidden;
+}
+.people {
+  margin: em(80) 0 em(80) 0;
+  overflow: visible;
+  @media #{$w1024} {
+    margin: em(48) 0;
+  }
+  &:first-child {
+    margin-top: 0;
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  .person {
+    margin-left: em(32);
+    @media #{$w1024} {
+      margin-left: em(20);
+    }
+  }
+}
+.people__slider {
+  display: flex;
+  align-items: stretch;
+  margin-left: em(-32);
+  @media #{$w1024} {
+    margin-left: em(-20);
+  }
+}
+
+.person {
+  background: var(--color-green20);
+  border-radius: em(25);
+  padding: em(26);
+  width: em(395);
+  flex-shrink: 0;
+  box-sizing: border-box;
+  position: relative;
+  @media #{$w1024} {
+    width: em(340);
+    padding: em(20);
+  }
+}
+.person:has(.person__link) {
+  transition: background-color 0.3s;
+  &:hover {
+    background: var(--color-green40);
+  }
+}
+.person__image {
+  border-radius: em(25);
+  overflow: hidden;
+  aspect-ratio: 10 / 12;
+  position: relative;
+  margin-bottom: em(38);
+}
+.person__social {
+  margin-top: em(26);
+  position: relative;
+  z-index: 3;
+}
+.person__link {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
