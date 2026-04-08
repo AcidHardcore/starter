@@ -1,6 +1,9 @@
 import '../editor/editor.scss'
 import clsx from 'clsx'
-import { buildImageAttributes, resetImageAttributes } from '../../utils/imageUtils'
+import {
+    buildImageAttributes,
+    resetImageAttributes
+} from '../utils/imageUtils'
 import { ImagePicker } from './ImagePicker'
 
 export const Image = ({
