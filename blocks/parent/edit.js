@@ -8,7 +8,6 @@ import {
 import {
   Notice,
   PanelBody,
-  PanelRow,
   SelectControl,
 } from '@wordpress/components'
 
@@ -22,18 +21,18 @@ export default function Edit ({ attributes, setAttributes, className, style }) {
   const blockProps = useBlockProps({
     className: clsx(
       className,
-      'reviews',
+      'parent',
       margin
     ),
     style,
   })
 
   const innerBlockProps = useInnerBlocksProps(
-    { className: 'reviews__slider swiper-wrapper' },
+    { className: 'parent__slider swiper-wrapper' },
     {
-      allowedBlocks: ['vit/review'],
+      allowedBlocks: ['vit/child'],
       template: [
-        ['vit/review', { quote: 'Lorem ipsum dolor sit amet' }],
+        ['vit/child', { quote: 'Lorem ipsum dolor sit amet' }],
       ],
       orientation: 'horizontal'
     }
@@ -42,12 +41,12 @@ export default function Edit ({ attributes, setAttributes, className, style }) {
   return (
     <>
       <InspectorControls>
-        <PanelBody title="Reviews Settings" initialOpen={true}>
+        <PanelBody title="Parent Settings" initialOpen={true}>
           <Notice status="info" isDismissible={ false }>
-          To add Reviews, please use the "Review" block inside this block by clicking the "+" button.
+          To add Parent, please use the "Child" block inside this block by clicking the "+" button.
         </Notice>
-          <PanelRow>Spacing</PanelRow>
           <SelectControl
+              label="Spacing"
             onChange={(val) => setAttributes({ margin: val })}
             value={margin}
             options={[

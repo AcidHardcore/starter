@@ -1,0 +1,29 @@
+{
+  "apiVersion": 3,
+  "name": "vit/child",
+  "title": "Child",
+  "description": "Parent child block",
+  "category": "devphase",
+  "icon": "smiley",
+  "supports": {
+    "align": false,
+    "anchor": false,
+    "color": {
+      "text": false,
+      "background": false
+    }
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": [
+    "file:./style-index.css"
+  ],
+  "attributes": {
+    "html": {
+      "type": "string"
+    }
+  },
+  "parent": [
+    "vit/parent"
+  ]
+}

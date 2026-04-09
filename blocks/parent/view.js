@@ -1,14 +1,14 @@
 (function($){
   $(document).ready(function(){
 
-    $('.quotes-slider').once('sw-quotes-slider').each(function() {
-      const m = new QuotesSlider($(this));
+    $('.parent').each(function() {
+      const m = new ParentSlider($(this));
     });
 
   });
 })(jQuery);
 
-class QuotesSlider {
+class ParentSlider {
 
   constructor($w){
     const _this = this;
@@ -16,10 +16,10 @@ class QuotesSlider {
     this.$w = $w;
 
     // Main slider
-    this.$swiper = this.$w.find('.swiper');
+    this.$swiper = this.$w;
     this.swiper = new Swiper(this.$swiper.get(0), {
-      loop: true,
-      slidesPerView: 1,
+      loop: false,
+      slidesPerView: 'auto',
       speed: 500,
       followFinger: true,
       navigation: {
@@ -32,7 +32,7 @@ class QuotesSlider {
       },
     });
 
-    this.$w.data('sw-quotes-slider', this);
+    this.$w.data('sw-review-slider', this);
   }
 
 }

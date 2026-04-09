@@ -9,14 +9,14 @@ export default function save ({ attributes, className }) {
 
   const blockProps = useBlockProps.save({
     className: clsx(
-      'reviews',
+      'parent',
       margin,
       className
     ),
   })
 
   const innerBlockProps = useInnerBlocksProps.save({
-    className: 'reviews__slider swiper-wrapper',
+    className: 'parent__slider swiper-wrapper',
   })
 
   return (

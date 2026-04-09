@@ -1,13 +1,13 @@
 {
 	"apiVersion": 3,
-	"name": "vit/reviews",
-	"title": "Reviews",
-	"description": "Reviews block",
+	"name": "vit/parent",
+	"title": "Parent",
+	"description": "Parent block",
 	"category": "devphase",
 	"icon": "smiley",
 	"supports": {
 		"align": false,
-		"anchor": false,
+		"anchor": true,
 		"color": {
 			"text": false,
 			"background": false
@@ -17,8 +17,7 @@
 	"editorStyle": "file:./index.css",
 	"style": [
 		"skeleton-wp-swiper",
-		"file:./style-index.css",
-		"skeleton-wp-author"
+		"file:./style-index.css"
 	],
 	"viewScript": [
 		"skeleton-wp-swiper",
