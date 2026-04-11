@@ -31,10 +31,9 @@ if ( $query->have_posts() ) {
 
 $block_classes = implode( ' ', array_filter( [
 	'people',
-	'swiper',
-	sprintf( 'block--pad-top--%s', $pad_top ),
-	sprintf( 'block--pad-bot--%s', $pad_bottom ),
-	sprintf( 'block--bg-%s', $bg ),
+	'block--pad-top--' .  $pad_top,
+	'block--pad-bot--'. $pad_bottom,
+	'block--bg-' . $bg
 ] ) );
 ?>
 
@@ -47,7 +46,7 @@ $block_classes = implode( ' ', array_filter( [
 	) ); ?>
 >
 	<?php if ( ! empty( $people ) ) : ?>
-      <div class="people__slider swiper-wrapper">
+      <div class="people__slider">
 		  <?php
 		  foreach ( $people as $i => $person ):
 			  $link = get_the_permalink( $person );
@@ -59,7 +58,7 @@ $block_classes = implode( ' ', array_filter( [
 			  $position = get_field( 'position', $person );
 			  $linkedin = get_field( 'linkedin', $person );
 			  ?>
-            <div class="person swiper-slide">
+            <div class="person">
 
               <div class="person__image">
 				  <?php get_template_part( 'template-parts/block/img', null, [
@@ -99,20 +98,6 @@ $block_classes = implode( ' ', array_filter( [
             </div>
 		  <?php endforeach; ?>
       </div>
-
-      <div class="swiper__controls">
-
-        <div class="swiper__pagination"></div>
-
-        <div class="swiper__arrows">
-          <div class="swiper__arrow swiper__arrow--left">
-            <i class="icon icon--arrow-left"></i>
-          </div>
-          <div class="swiper__arrow swiper__arrow--right">
-            <i class="icon icon--arrow-right"></i>
-          </div>
-        </div>
-
-      </div>
+    
 	<?php endif; ?>
 </div>

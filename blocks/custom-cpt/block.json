@@ -1,0 +1,24 @@
+{
+  "apiVersion": 3,
+  "name": "vit/custom-cpt",
+  "title": "Custom CPT",
+  "description": "Generic custom post type block",
+  "category": "devphase",
+  "icon": "grid-view",
+  "supports": {
+    "align": false,
+    "anchor": true,
+    "color": {
+      "text": false,
+      "background": false,
+      "link": false
+    }
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": [
+    "file:./style-index.css"
+  ],
+  "render": "file:./render.php",
+  "attributes": {}
+}

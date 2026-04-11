@@ -1,0 +1,27 @@
+// Front-end styles for the custom-cpt block.
+// Add layout, typography, and visual styles for .custom-cpt here.
+
+.custom-cpt {
+  &__grid {
+    // Grid layout — customise to match your design system
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1.5rem;
+  }
+
+  &__card {
+    // Card base — mirrors the original .person class
+  }
+
+  &__card-image {
+    // Image container — mirrors the original .person__image class
+  }
+
+  &__card-position {
+    // Mirrors the original .person__position class
+  }
+
+  &__card-social {
+    // Mirrors the original .person__social class
+  }
+}

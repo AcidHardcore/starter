@@ -1,3 +1,5 @@
+// ─── Shared image component styles (carried over) ────────────────────────────
+
 .image-container {
   position: relative;
   display: inline-block;
@@ -26,21 +28,71 @@
   border-radius: 50%;
   padding: 0 !important;
   border: 2px solid #000;
-  transition: transform .3s ease;
+  transition: transform 0.3s ease;
   cursor: pointer;
   height: auto !important;
   width: auto !important;
   min-width: auto !important;
 
   &:hover {
-    box-shadow:  none !important;
+    box-shadow: none !important;
+    transform: translateY(-0.25rem);
   }
-}
-
-.remove-image-button:hover {
-  transform: translateY(-.25rem);
 }
 
 .remove-image-button .components-button__icon {
   margin: 0;
+}
+
+// ─── Loading state ────────────────────────────────────────────────────────────
+
+.cpt-loading-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  text-align: center;
+
+  &__message {
+    margin-top: 10px;
+    color: #666;
+  }
+}
+
+// ─── Empty state ──────────────────────────────────────────────────────────────
+
+.cpt-empty-state {
+  padding: 40px;
+  text-align: center;
+  border: 2px dashed #ccc;
+  border-radius: 4px;
+
+  &__message {
+    color: #666;
+    margin: 0;
+  }
+}
+
+// ─── Card image placeholder (no featured image set) ──────────────────────────
+
+.custom-cpt__card-image {
+  // Ensure the ImageSave wrapper fills the card image slot consistently
+  .image-wrap {
+    width: 100%;
+    height: 100%;
+  }
+
+  // Fallback when no image is present — keeps card layout stable
+  .image-wrap:empty {
+    background: #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+
+    &::after {
+      content: 'No image';
+    }
+  }
 }
