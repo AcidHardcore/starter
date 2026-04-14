@@ -1,77 +1,63 @@
 {
-    "apiVersion": 3,
-    "name": "vit/list-icon",
-    "title": "List Icons",
-    "description": "List Icons block",
-    "category": "devphase",
-    "icon": "smiley",
-    "supports": {
-        "align": false,
-        "anchor": true,
-        "color": {
-            "text": false,
-            "background": false
-        },
-        "spacing": {
-            "margin": false,
-            "padding": false,
-            "blockGap": null,
-            "units": [ "px", "em", "rem", "vh", "vw" ]
-        }
+  "apiVersion": 3,
+  "name": "vit/list-icon",
+  "title": "List Icon",
+  "description": "List Icon block",
+  "category": "devphase",
+  "icon": "smiley",
+  "supports": {
+    "align": false,
+    "anchor": true,
+    "color": {
+      "text": false,
+      "background": false
     },
-    "editorScript": "file:./index.js",
-    "editorStyle": "file:./index.css",
-    "style": [
-        "file:./style-index.css"
-    ],
-    "attributes": {
-        "image_id": {
-            "type": "number"
-        },
-        "image_url": {
-            "type": "string"
-        },
-        "image_alt": {
-            "type": "string",
-            "default": "image"
-        },
-        "image_srcset": {
-            "type": "string"
-        },
-        "image_sizes": {
-            "type": "string"
-        },
-        "image_width": {
-            "type": "number"
-        },
-        "image_height": {
-            "type": "number"
-        },
-        "image_loading": {
-            "type": "string",
-            "default": "lazy"
-        },
-        "wowDelay": {
-            "type": "number",
-            "default": 0.05
-        },
-        "svg_content": {
-            "type": "string"
-        },
-        "isWow": {
-            "type": "boolean",
-            "default": true
-        },
-        "title": {
-            "type": "string",
-            "default": ""
-        },
-        "text": {
-            "type": "string",
-            "default": ""
-        }
+    "spacing": {
+      "margin": false,
+      "padding": false,
+      "blockGap": null,
+      "units": ["px", "em", "rem", "vh", "vw"]
+    }
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": [
+    "file:./style-index.css"
+  ],
+  "attributes": {
+    "image": {
+      "type": "object",
+      "default": {
+        "id": null,
+        "url": "",
+        "alt": "",
+        "srcset": "",
+        "sizes": "",
+        "width": null,
+        "height": null,
+        "loading": "lazy",
+        "mime": "",
+        "svgContent": null
+      }
     },
-    "parent": [
-        "vit/list-icons"
-    ]
+    "wowDelay": {
+      "type": "number",
+      "default": 0.05
+    },
+    "isWow": {
+      "type": "boolean",
+      "default": true
+    },
+    "title": {
+      "type": "string",
+      "default": ""
+    },
+    "text": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "parent": [
+    "vit/list-icons"
+  ]
 }

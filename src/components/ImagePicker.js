@@ -18,7 +18,16 @@ export const ImagePicker = ({
                                 showRemoveButton = true,
                                 decoding,
                             }) => {
-    const { id, url, alt, srcset, sizes, width, height, loading } = image
+    const {
+        id,
+        url,
+        alt,
+        srcset,
+        sizes,
+        width,
+        height,
+        loading
+    } = image
 
     const hasImage = url && id
 

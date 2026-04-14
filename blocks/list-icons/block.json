@@ -35,9 +35,5 @@
       "type": "boolean",
       "default": true
     }
-  },
-  "parent": [
-    "vit/general",
-    "core/column"
-  ]
+  }
 }
